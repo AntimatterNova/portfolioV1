@@ -1,0 +1,66 @@
+:root {
+    --trim-col: #4F4F4F;
+    --main-col: #00daea;
+    --border-rad: 10px;
+}
+
+body {
+    background-image: url(../decorHead.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 0px 20px 0px;
+    background-color: var(--trim-col);
+    border-radius: var(--border-rad);
+}
+
+header h1 {
+    justify-self: flex-start;
+    padding: 5px;
+    color: var(--trim-col);
+    background-color: var(--main-col);
+    border-radius: var(--border-rad);
+    font-size: 48pt;
+}
+
+nav ul {
+    justify-self: flex-end;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-flex;
+    justify-self: flex-end;
+    color: var(--main-col);
+}
+
+.sections {
+    display: flex;
+    flex: wrap;
+    justify-content: flex-start;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--trim-col);
+    border-radius: var(--border-rad);
+}
+
+p {
+    flex: 0 1 80%;
+    align-self: right;
+    padding-left: 10px;
+    border: 0px;
+    border-left: 5px;
+    border-style: solid;
+    border-color: var(--trim-col);
+    font-size: large;
+}
+
+.sectionH {
+    flex: 1 0 15%;
+    color: var(--trim-col);
+    font-size: 36pt;
+    padding-left: 20px;
+}
