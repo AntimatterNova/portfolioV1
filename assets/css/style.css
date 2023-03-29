@@ -2,10 +2,12 @@
     --trim-col: #4F4F4F;
     --main-col: #00daea;
     --border-rad: 10px;
+    --border-w: 5px;
 }
 
 body {
-    background-image: url(../decorHead.jpg);
+    background-image: url(../mainBackground.jpg);
+    background-size:cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -36,31 +38,48 @@ nav ul li a {
     color: var(--main-col);
 }
 
-.sections {
+.subtitle {
+    border-radius: var(--border-rad);
+    width: 50%;
+    background-color: var(--main-col);
+    color: var(--trim-col);
+    text-align: center;
+}
+
+.section {
     display: flex;
     flex: wrap;
     justify-content: flex-start;
+    margin-bottom: 20px;
     background-color: white;
     border-style: solid;
-    border-width: 5px;
+    border-width: var(--border-w);
     border-color: var(--trim-col);
     border-radius: var(--border-rad);
 }
 
 p {
-    flex: 0 1 80%;
+    flex: 0 1 1000px;
     align-self: right;
     padding-left: 10px;
     border: 0px;
-    border-left: 5px;
+    border-left: var(--border-w);
     border-style: solid;
     border-color: var(--trim-col);
     font-size: large;
 }
 
 .sectionH {
-    flex: 1 0 15%;
+    flex: 0 1 400px;
     color: var(--trim-col);
     font-size: 36pt;
     padding-left: 20px;
+}
+
+#fhPic {
+    border-color: var(--trim-col);
+    border-style: solid;
+    border-width: var(--border-w);
+    border-radius: var(--border-rad);
+    color: var(--main-col);
 }
