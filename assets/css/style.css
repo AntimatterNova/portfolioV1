@@ -46,11 +46,33 @@ nav ul li a {
     text-align: center;
 }
 
-.section {
+p {
+    flex: 0 1 1000px;
+    align-self: right;
+    padding-left: 10px;
+    /* border: 0px;
+    border-left: var(--border-w);
+    border-style: solid;
+    border-color: var(--trim-col); */
+    font-size: large;
+}
+
+.section-header {
+    flex: 0 1 25%;
+    color: var(--trim-col);
+    font-size: 36pt;
+    padding-left: 40px;
+    border: 0px;
+    border-right: var(--border-w);
+    border-style: solid;
+    border-color: var(--trim-col);
+}
+
+.about-me {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 20px;
+    margin: 20px;
     background-color: white;
     border-style: solid;
     border-width: var(--border-w);
@@ -58,28 +80,59 @@ nav ul li a {
     border-radius: var(--border-rad);
 }
 
-p {
-    flex: 0 1 1000px;
-    align-self: right;
-    padding-left: 10px;
-    border: 0px;
-    border-left: var(--border-w);
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: white;
     border-style: solid;
+    border-width: var(--border-w);
     border-color: var(--trim-col);
-    font-size: large;
+    border-radius: var(--border-rad);
 }
 
-.sectionH {
-    flex: 0 1 400px;
-    color: var(--trim-col);
-    font-size: 36pt;
-    padding-left: 20px;
-}
-
-#fhPic {
+/* .work-link {
+    flex: 0 1 50%;
+    align-content: column;
     border-color: var(--trim-col);
     border-style: solid;
     border-width: var(--border-w);
     border-radius: var(--border-rad);
+    margin-left: 20px;
+} */
+
+.work-link img {
+    flex: 0 1 50%;
+    border-color: var(--trim-col);
+    border-style: solid;
+    border-width: var(--border-w);
+    border-radius: var(--border-rad);
+    margin: 1%;
     color: var(--main-col);
+    width: 40%;
+}
+
+/* .work-link a {
+    font-size: large;
+    background-color: var(--main-col);
+    color: var(--trim-col);
+    border-radius: var(--border-rad);
+} */
+
+.work-link a {
+    position: relative;
+}
+
+.work-link h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 5%;
+    background-color: var(--main-col);
+    color: var(--trim-col);
+    padding: 10px;
+    border-color: var(--trim-col);
+    border-style: solid;
+    border-width: var(--border-w);
+    border-radius: var(--border-rad);
 }
