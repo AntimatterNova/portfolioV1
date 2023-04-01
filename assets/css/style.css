@@ -9,6 +9,7 @@ body {
     background-image: url(../mainBackground.jpg);
     background-size:cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
 }
 
 header {
@@ -24,43 +25,35 @@ header h1 {
     color: var(--trim-col);
     background-color: var(--main-col);
     border-radius: var(--border-rad);
-    font-size: 48pt;
+    font-size: 4rem;
 }
 
-nav ul {
-    justify-self: flex-end;
-    list-style: none;
-}
-
-nav ul li a {
-    display: inline-flex;
-    justify-self: flex-end;
-    color: var(--main-col);
-}
-
-.subtitle {
+nav {
+    background-color: var(--trim-col);
     border-radius: var(--border-rad);
-    width: 50%;
-    background-color: var(--main-col);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+nav a {
     color: var(--trim-col);
-    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: var(--main-col);
+    border-radius: var(--border-rad);
 }
 
 p {
-    flex: 0 1 1000px;
+    flex: 0 1 70%;
     align-self: right;
     padding-left: 10px;
-    /* border: 0px;
-    border-left: var(--border-w);
-    border-style: solid;
-    border-color: var(--trim-col); */
     font-size: large;
 }
 
 .section-header {
     flex: 0 1 25%;
     color: var(--trim-col);
-    font-size: 36pt;
+    font-size: 3rem;
     padding-left: 40px;
     border: 0px;
     border-right: var(--border-w);
@@ -68,7 +61,8 @@ p {
     border-color: var(--trim-col);
 }
 
-.about-me {
+#about-me {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -80,7 +74,12 @@ p {
     border-radius: var(--border-rad);
 }
 
-.my-work {
+#about-me a img {
+    width: 10%;
+    padding: 20px;
+}
+
+#my-work {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -92,18 +91,12 @@ p {
     border-radius: var(--border-rad);
 }
 
-/* .work-link {
-    flex: 0 1 50%;
-    align-content: column;
-    border-color: var(--trim-col);
-    border-style: solid;
-    border-width: var(--border-w);
-    border-radius: var(--border-rad);
-    margin-left: 20px;
-} */
+.work-link {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .work-link img {
-    flex: 0 1 50%;
     border-color: var(--trim-col);
     border-style: solid;
     border-width: var(--border-w);
@@ -112,13 +105,6 @@ p {
     color: var(--main-col);
     width: 40%;
 }
-
-/* .work-link a {
-    font-size: large;
-    background-color: var(--main-col);
-    color: var(--trim-col);
-    border-radius: var(--border-rad);
-} */
 
 .work-link a {
     position: relative;
@@ -134,5 +120,31 @@ p {
     border-color: var(--trim-col);
     border-style: solid;
     border-width: var(--border-w);
+    border-radius: var(--border-rad);
+}
+
+.work-link:hover {
+    opacity: 0.7;
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: white;
+    border-style: solid;
+    border-width: var(--border-w);
+    border-color: var(--trim-col);
+    border-radius: var(--border-rad);
+}
+
+#contact h2 {
+}
+
+#contact a {
+    align-items: center;
+    color: var(--main-col);
+    background-color: var(--trim-col);
     border-radius: var(--border-rad);
 }
