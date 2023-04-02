@@ -6,10 +6,10 @@
 }
 
 body {
-    background-image: url(../mainBackground.jpg);
-    background-size:cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12pt;
+    background-image: url(../mainBackground.jpg);
+    background-size:cover;
 }
 
 header {
@@ -29,18 +29,25 @@ header h1 {
 }
 
 nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 20px;
     background-color: var(--trim-col);
     border-radius: var(--border-rad);
-    margin-top: 20px;
-    padding: 20px;
 }
 
 nav a {
-    color: var(--trim-col);
     padding: 10px;
-    font-weight: bold;
+    color: var(--trim-col);
     background-color: var(--main-col);
     border-radius: var(--border-rad);
+    font-weight: bold;
+}
+
+nav a:hover {
+    opacity: 0.7;
 }
 
 p {
@@ -52,13 +59,13 @@ p {
 
 .section-header {
     flex: 0 1 25%;
-    color: var(--trim-col);
-    font-size: 3rem;
     padding-left: 40px;
+    color: var(--trim-col);
     border: 0px;
-    border-right: var(--border-w);
     border-style: solid;
     border-color: var(--trim-col);
+    border-right: var(--border-w);
+    font-size: 3rem;
 }
 
 #about-me {
@@ -69,14 +76,22 @@ p {
     margin: 20px;
     background-color: white;
     border-style: solid;
-    border-width: var(--border-w);
     border-color: var(--trim-col);
+    border-width: var(--border-w);
     border-radius: var(--border-rad);
 }
 
-#about-me a img {
+#about-me a {
     width: 10%;
+}
+
+#about-me a img {
+    width: 100%;
     padding: 20px;
+}
+
+#about-me a img:hover {
+    opacity: 0.7;
 }
 
 #my-work {
@@ -86,24 +101,25 @@ p {
     margin: 20px;
     background-color: white;
     border-style: solid;
-    border-width: var(--border-w);
     border-color: var(--trim-col);
+    border-width: var(--border-w);
     border-radius: var(--border-rad);
 }
 
-.work-link {
+#sites {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .work-link img {
-    border-color: var(--trim-col);
+    margin: 1%;
+    width: 40%;
+    color: var(--main-col);
     border-style: solid;
+    border-color: var(--trim-col);
     border-width: var(--border-w);
     border-radius: var(--border-rad);
-    margin: 1%;
-    color: var(--main-col);
-    width: 40%;
 }
 
 .work-link a {
@@ -112,39 +128,77 @@ p {
 
 .work-link h3 {
     position: absolute;
-    bottom: 15px;
+    bottom: 50%;
     left: 5%;
-    background-color: var(--main-col);
+    padding: 5%;
     color: var(--trim-col);
-    padding: 10px;
-    border-color: var(--trim-col);
+    background-color: var(--main-col);
     border-style: solid;
+    border-color: var(--trim-col);
     border-width: var(--border-w);
     border-radius: var(--border-rad);
 }
 
-.work-link:hover {
+.work-link img:hover {
+    opacity: 0.7;
+}
+
+#first-project img {
+    margin: 1%;
+    width: 70%;
+    color: var(--main-col);
+    border-style: solid;
+    border-color: var(--trim-col);
+    border-width: var(--border-w);
+    border-radius: var(--border-rad);
+}
+
+#first-project a {
+    position: relative;
+}
+
+#first-project h3 {
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    padding: 10px;
+    color: var(--trim-col);
+    background-color: var(--main-col);
+    border-style: solid;
+    border-color: var(--trim-col);
+    border-width: var(--border-w);
+    border-radius: var(--border-rad);
+}
+
+#first-project img:hover {
     opacity: 0.7;
 }
 
 #contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     margin: 20px;
     background-color: white;
     border-style: solid;
-    border-width: var(--border-w);
     border-color: var(--trim-col);
+    border-width: var(--border-w);
     border-radius: var(--border-rad);
 }
 
-#contact h2 {
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
 }
 
-#contact a {
-    align-items: center;
+.links a {
+    flex: 0 1 5%;
+    padding: 10px;
     color: var(--main-col);
     background-color: var(--trim-col);
     border-radius: var(--border-rad);
+    text-align: center;
+}
+
+.links a:hover {
+    opacity: 0.7;
 }
